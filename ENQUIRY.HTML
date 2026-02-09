@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Enquiry Form</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f0f0f;
+        color: #f5f5f5;
+    }
+
+    /* Header */
+    .header {
+        background: #1a0005;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        border-bottom: 2px solid #c5a46d;
+    }
+
+    .header img {
+        height: 70px;
+    }
+
+    .school-title {
+        font-size: 28px;
+        font-weight: bold;
+        color: #c5a46d;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    /* Layout */
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 40px 20px;
+        flex-wrap: wrap;
+    }
+
+    .side-image img {
+        width: 260px;
+        border-radius: 12px;
+        border: 2px solid #c5a46d;
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    /* Form container */
+    .container {
+        max-width: 420px;
+        background: #1a0005;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.6);
+        border: 1px solid #c5a46d;
+    }
+
+    h2 {
+        text-align: center;
+        color: #c5a46d;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-top: 12px;
+        font-weight: bold;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 9px;
+        margin-top: 4px;
+        border: none;
+        border-radius: 6px;
+        background: #2a0008;
+        color: #fff;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        outline: 2px solid #c5a46d;
+    }
+
+
+    ::placeholder {
+    color: #c5a46d;
+    opacity: 0.6;}
+
+    .btn {
+        margin-top: 20px;
+        width: 100%;
+        padding: 12px;
+        background: #c5a46d;
+        color: #1a0005;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #e0bf84;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px;
+        color: #c5a46d;
+        margin-top: 30px;
+        border-top: 1px solid #c5a46d;
+    }
+
+    /* Mobile */
+    @media (max-width: 900px) {
+        .main {
+            flex-direction: column;
+        }
+        .side-image img {
+            width: 90%;
+            max-width: 350px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+    <img src="logo1.png" alt="School Logo">
+    <div class="school-title">PARAS PUBLIC SCHOOL</div>
+    <img src="logo2.png" alt="School Logo">
+</div>
+
+<!-- Main Layout -->
+<div class="main">
+
+    <!-- Left Student Image -->
+    <div class="side-image">
+        <img src="student.jpg" alt="Student">
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+        <h2>Admission Enquiry</h2>
+
+        <form>
+
+            <input type="text" placeholder="Student Name" required>
+
+            <select required>
+                <option value="">Class Applying For</option>
+                <option>Nursery</option>
+                <option>LKG</option>
+                <option>UKG</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+
+            <input type="date" required>
+
+            <input type="text" placeholder="Parent Name" required>
+
+            <input type="tel" placeholder="Contact Number" required>
+
+            <input type="email" placeholder="Email Address">
+
+            <textarea rows="3" placeholder="Address"></textarea>
+
+            <button type="submit" class="btn">Submit Enquiry</button>
+
+        </form>
+
+    </div>
+
+    <!-- Right School Image -->
+    <div class="side-image">
+        <img src="school.jpg" alt="School Building">
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2011 PARAS SCHOOL NAME | Rights Reserved.
+</div>
+
+</body>
+</html>
